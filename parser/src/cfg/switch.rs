@@ -58,7 +58,6 @@ pub(crate) mod cmd {
             .map(|v| s.a.sref_str(v))
             .collect();
         let binary_then_args = s.a.sref_vec(binary_then_args);
-        dbg!(&binary_then_args);
 
         s.a.sref(|| {
             let cmd_cfg = cmd::CmdState { binary_then_args };
